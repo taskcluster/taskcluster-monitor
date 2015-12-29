@@ -1,0 +1,23 @@
+---
+pending-count-gecko-decision:
+  type: 'influx'
+  description: "Alert when gecko-decision tasks have a pending backlog for more than 10 minutes"
+  database: 'taskclusterdev'
+  query: "select mean(pendingTasks) from AwsProvisioner.ProvisioningIteration where workerType='gaia-decision' and time > now() - 10m"
+  # Frequency (seconds) that this rule should be evaluated
+  frequency: 120
+  # Trigger alert when number of results is greater than theshold.
+  # Alert will be marked as Pending until duration is met, then Alert will be
+  # marked as active and a notification sent.
+  threshold: 5
+  notification:
+    message: 'Gecko decision task pending queue has an average above 5 for 10 minutes.'
+pending-count-gaia-decision:
+  type: 'influx'
+  description: "Alert when gaia-decision tasks have a pending backlog for more than 10 minutes"
+  database: 'taskclusterdev'
+  query: "select mean(pendingTasks) from AwsProvisioner.ProvisioningIteration where workerType='gaia-decision' and time > now() - 10m"
+  frequency: 120
+  threshold: 5
+  notification:
+    message: 'Gaia decision task pending queue has an average above 5 for 10 minutes.'

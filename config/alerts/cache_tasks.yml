@@ -1,0 +1,380 @@
+---
+cache-github.com/walac/gecko-dev:
+  type: 'indexedTask'
+  description: "Alert when 'github.com/walac/gecko-dev' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.6b08fec5e000ef7bf4c88c18298e68ec'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://github.com/walac/gecko-dev' has not been cached in over 48 hours."
+
+cache-github.com/lightsofapollo/build-mozharness:
+  type: 'indexedTask'
+  description: "Alert when 'github.com/lightsofapollo/build-mozharness' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.ab865c073730f34bb3e471d54ae4580a'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://github.com/lightsofapollo/build-mozharness' has not been cached in over 48 hours."
+
+cache-hg.mozilla.org/build/mozharness:
+  type: 'indexedTask'
+  description: "Alert when 'hg.mozilla.org/build/mozharness' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.390b565498eb684ed3a59b9eb5f4c2ce'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://hg.mozilla.org/build/mozharness' has not been cached in over 48 hours."
+
+cache-hg.mozilla.org/build/tools:
+  type: 'indexedTask'
+  description: "Alert when 'hg.mozilla.org/build/tools' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.c39337b4c2055f7433ef759b98479ae6'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://hg.mozilla.org/build/tools' has not been cached in over 48 hours."
+
+cache-hg.mozilla.org/mozilla-central:
+  type: 'indexedTask'
+  description: "Alert when 'hg.mozilla.org/mozilla-central' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.8e254c24285837144dfbfd6bddcaaff6'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://hg.mozilla.org/mozilla-central' has not been cached in over 48 hours."
+
+cache-hg.mozilla.org/mozilla-central/:
+  type: 'indexedTask'
+  description: "Alert when 'hg.mozilla.org/mozilla-central/' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.b2a13ee9171fbf5f2ce2de156f527e87'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://hg.mozilla.org/mozilla-central/' has not been cached in over 48 hours."
+
+cache-hg.mozilla.org/integration/b2g-inbound/:
+  type: 'indexedTask'
+  description: "Alert when 'hg.mozilla.org/integration/b2g-inbound/' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.9f184bd3a1f738b5265428dae027b17f'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://hg.mozilla.org/integration/b2g-inbound/' has not been cached in over 48 hours."
+
+cache-hg.mozilla.org/integration/b2g-inbound:
+  type: 'indexedTask'
+  description: "Alert when 'hg.mozilla.org/integration/b2g-inbound' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.1caf33e47b6f9c4cfe08a66ae06d692a'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://hg.mozilla.org/integration/b2g-inbound' has not been cached in over 48 hours."
+
+cache-hg.mozilla.org/integration/mozilla-inbound:
+  type: 'indexedTask'
+  description: "Alert when 'hg.mozilla.org/integration/mozilla-inbound' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.9142ac92fa9372ba60656fa1e268f2c3'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://hg.mozilla.org/integration/mozilla-inbound' has not been cached in over 48 hours."
+
+cache-hg.mozilla.org/integration/mozilla-inbound/:
+  type: 'indexedTask'
+  description: "Alert when 'hg.mozilla.org/integration/mozilla-inbound/' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.bb71a843d7588108861bbe70fca6fbd9'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://hg.mozilla.org/integration/mozilla-inbound/' has not been cached in over 48 hours."
+
+cache-hg.mozilla.org/integration/gaia:
+  type: 'indexedTask'
+  description: "Alert when 'hg.mozilla.org/integration/gaia' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.f664cd8d7bcdebcaaa4adaeb90892684'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://hg.mozilla.org/integration/gaia' has not been cached in over 48 hours."
+
+cache-hg.mozilla.org/integration/gaia/:
+  type: 'indexedTask'
+  description: "Alert when 'hg.mozilla.org/integration/gaia/' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.1b70fdf90f9aa086714f4dd01f9ff0be'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://hg.mozilla.org/integration/gaia/' has not been cached in over 48 hours."
+
+cache-hg.mozilla.org/integration/gaia-2_5:
+  type: 'indexedTask'
+  description: "Alert when 'hg.mozilla.org/integration/gaia-2_5' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.cd48a01cf723bbe773c9c948d168194c'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://hg.mozilla.org/integration/gaia-2_5' has not been cached in over 48 hours."
+
+cache-hg.mozilla.org/integration/gaia-2_5/:
+  type: 'indexedTask'
+  description: "Alert when 'hg.mozilla.org/integration/gaia-2_5/' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.02179b1fca44f8ea18af18db80350718'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://hg.mozilla.org/integration/gaia-2_5/' has not been cached in over 48 hours."
+
+cache-hg.mozilla.org/integration/gaia-2_2r:
+  type: 'indexedTask'
+  description: "Alert when 'hg.mozilla.org/integration/gaia-2_2r' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.4047df5cabfe0f9cffe5dbf1525f702f'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://hg.mozilla.org/integration/gaia-2_2r' has not been cached in over 48 hours."
+
+cache-hg.mozilla.org/integration/gaia-2_2r/:
+  type: 'indexedTask'
+  description: "Alert when 'hg.mozilla.org/integration/gaia-2_2r/' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.5744ecf026fe1644bc98a4ee0371ca4e'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://hg.mozilla.org/integration/gaia-2_2r/' has not been cached in over 48 hours."
+
+cache-hg.mozilla.org/integration/fx-team/:
+  type: 'indexedTask'
+  description: "Alert when 'hg.mozilla.org/integration/fx-team/' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.2284f533ffe1748b1c0c3f43694f9d25'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://hg.mozilla.org/integration/fx-team/' has not been cached in over 48 hours."
+
+cache-hg.mozilla.org/integration/fx-team:
+  type: 'indexedTask'
+  description: "Alert when 'hg.mozilla.org/integration/fx-team' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.5b16cf354fa8d76621378203e046ca2f'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://hg.mozilla.org/integration/fx-team' has not been cached in over 48 hours."
+
+cache-git.mozilla.org/b2g/B2G.git:
+  type: 'indexedTask'
+  description: "Alert when 'git.mozilla.org/b2g/B2G.git' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.800f33e6f08b2045d305a1c0888f02ab'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://git.mozilla.org/b2g/B2G.git' has not been cached in over 48 hours."
+
+cache-hg.mozilla.org/integration/gaia-central:
+  type: 'indexedTask'
+  description: "Alert when 'hg.mozilla.org/integration/gaia-central' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.6282de43ea3760c62683ebe0aca54a05'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://hg.mozilla.org/integration/gaia-central' has not been cached in over 48 hours."
+
+cache-hg.mozilla.org/integration/gaia-central/:
+  type: 'indexedTask'
+  description: "Alert when 'hg.mozilla.org/integration/gaia-central/' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.84258b4743eee0c4c167547a3e97e653'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://hg.mozilla.org/integration/gaia-central/' has not been cached in over 48 hours."
+
+cache-git.mozilla.org/b2g/B2G:
+  type: 'indexedTask'
+  description: "Alert when 'git.mozilla.org/b2g/B2G' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.58a1246d411cf1fb5bf9d0f9a35da402'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://git.mozilla.org/b2g/B2G' has not been cached in over 48 hours."
+
+cache-github.com/mozilla-b2g/gaia:
+  type: 'indexedTask'
+  description: "Alert when 'github.com/mozilla-b2g/gaia' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.1252a4a15b3f7d57b97a9575f9881cb4'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://github.com/mozilla-b2g/gaia' has not been cached in over 48 hours."
+
+cache-github.com/mozilla-b2g/B2G:
+  type: 'indexedTask'
+  description: "Alert when 'github.com/mozilla-b2g/B2G' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.ee268c8b159483c7d084412837e45a71'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://github.com/mozilla-b2g/B2G' has not been cached in over 48 hours."
+
+cache-github.com/mozilla-b2g/B2G-manifest:
+  type: 'indexedTask'
+  description: "Alert when 'github.com/mozilla-b2g/B2G-manifest' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.46045919e84b0a6d358a4f15e6b5d41d'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://github.com/mozilla-b2g/B2G-manifest' has not been cached in over 48 hours."
+
+cache-github.com/mozilla-b2g/moztt:
+  type: 'indexedTask'
+  description: "Alert when 'github.com/mozilla-b2g/moztt' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.5c011e49b1817fe5708677ad883ce722'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://github.com/mozilla-b2g/moztt' has not been cached in over 48 hours."
+
+cache-github.com/mozilla/gecko-dev:
+  type: 'indexedTask'
+  description: "Alert when 'github.com/mozilla/gecko-dev' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.b0f5ad307745cfd4304d34b5e585c17b'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://github.com/mozilla/gecko-dev' has not been cached in over 48 hours."
+
+cache-git.mozilla.org/build/tooltool.git:
+  type: 'indexedTask'
+  description: "Alert when 'git.mozilla.org/build/tooltool.git' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.1701b57453a399bf7f99da9979ca07e5'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://git.mozilla.org/build/tooltool.git' has not been cached in over 48 hours."
+
+cache-git.mozilla.org/external/google/gerrit/git-repo.git:
+  type: 'indexedTask'
+  description: "Alert when 'git.mozilla.org/external/google/gerrit/git-repo.git' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.e9dd584bc0f56bcedef5b5d74633f800'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://git.mozilla.org/external/google/gerrit/git-repo.git' has not been cached in over 48 hours."
+
+cache-hg.mozilla.org/projects/alder:
+  type: 'indexedTask'
+  description: "Alert when 'hg.mozilla.org/projects/alder' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.3c90fe1bf45fefe074c27e287c268c7e'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://hg.mozilla.org/projects/alder' has not been cached in over 48 hours."
+
+cache-hg.mozilla.org/projects/alder/:
+  type: 'indexedTask'
+  description: "Alert when 'hg.mozilla.org/projects/alder/' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.7e207f5c8a4472fe51941b630c5e8945'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://hg.mozilla.org/projects/alder/' has not been cached in over 48 hours."
+
+cache-hg.mozilla.org/releases/mozilla-b2g34_v2_1:
+  type: 'indexedTask'
+  description: "Alert when 'hg.mozilla.org/releases/mozilla-b2g34_v2_1' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.59020c94ac89e855247c5b47e41e8eb0'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://hg.mozilla.org/releases/mozilla-b2g34_v2_1' has not been cached in over 48 hours."
+
+cache-hg.mozilla.org/releases/mozilla-b2g34_v2_1/:
+  type: 'indexedTask'
+  description: "Alert when 'hg.mozilla.org/releases/mozilla-b2g34_v2_1/' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.00304dc3ebb1ffb0b250af0ac8ad44fc'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://hg.mozilla.org/releases/mozilla-b2g34_v2_1/' has not been cached in over 48 hours."
+
+cache-hg.mozilla.org/releases/mozilla-b2g37_v2_2r:
+  type: 'indexedTask'
+  description: "Alert when 'hg.mozilla.org/releases/mozilla-b2g37_v2_2r' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.75c1a6785eaec565f8602cb570d6a413'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://hg.mozilla.org/releases/mozilla-b2g37_v2_2r' has not been cached in over 48 hours."
+
+cache-hg.mozilla.org/releases/mozilla-b2g37_v2_2r/:
+  type: 'indexedTask'
+  description: "Alert when 'hg.mozilla.org/releases/mozilla-b2g37_v2_2r/' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.54bed4f0e4c6f0a75ba9d5958615c005'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://hg.mozilla.org/releases/mozilla-b2g37_v2_2r/' has not been cached in over 48 hours."
+
+cache-hg.mozilla.org/releases/mozilla-b2g37_v2_2r/:
+  type: 'indexedTask'
+  description: "Alert when 'hg.mozilla.org/releases/mozilla-b2g37_v2_2r/' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.54bed4f0e4c6f0a75ba9d5958615c005'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://hg.mozilla.org/releases/mozilla-b2g37_v2_2r/' has not been cached in over 48 hours."
+
+cache-hg.mozilla.org/releases/mozilla-b2g44_v2_5:
+  type: 'indexedTask'
+  description: "Alert when 'hg.mozilla.org/releases/mozilla-b2g44_v2_5' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.61477a365491a94f4807732ba2aafd54'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://hg.mozilla.org/releases/mozilla-b2g44_v2_5' has not been cached in over 48 hours."
+
+cache-hg.mozilla.org/releases/mozilla-b2g44_v2_5/:
+  type: 'indexedTask'
+  description: "Alert when 'hg.mozilla.org/releases/mozilla-b2g44_v2_5/' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.43ebba5718b90291a843f3951ddd192a'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://hg.mozilla.org/releases/mozilla-b2g44_v2_5/' has not been cached in over 48 hours."
