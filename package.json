@@ -1,0 +1,28 @@
+{
+  "name": "taskcluster-monitor",
+  "version": "0.0.1",
+  "description": "Monitor for various taskcluster services and metrics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Greg Arndt",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.2.26",
+    "aws-sdk-promise": "0.0.2",
+    "babel": "^5.8.34",
+    "denodeify": "^1.2.1",
+    "influx": "^3.5.0",
+    "js-yaml": "^3.4.3",
+    "lodash": "^3.10.1",
+    "mocha": "^2.3.4",
+    "nock": "^3.5.0",
+    "request": "^2.67.0",
+    "request-promise": "^1.0.2",
+    "taskcluster-client": "^0.23.4",
+    "taskcluster-lib-loader": "^0.1.0",
+    "typed-env-config": "^0.10.0",
+    "url-join": "0.0.1"
+  }
+}

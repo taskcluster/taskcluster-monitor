@@ -1,0 +1,18 @@
+defaults:
+  taskcluster:
+    clientId: !env TASKCLUSTER_CLIENT_ID
+    accessToken: !env TASKCLUSTER_ACCESS_TOKEN
+  influx:
+    host:     !env INFLUX_HOST
+    username: !env INFLUX_USERNAME
+    password: !env INFLUX_PASSWORD
+  aws:
+    sns:
+      topic:           !env AWS_SNS_TOPIC
+      accessKeyId:     !env AWS_ACCESS_KEY_ID
+      secretAccessKey: !env AWS_SECRET_ACCESS_KEY
+      region:          us-west-2
+production:
+  app:
+    test: 1
+
