@@ -11,4 +11,4 @@ ISE-high-rate:
   duration: 300
   notification:
     message:
-      'There have been a higher than usual rate of internal server errors reported. (> 10 per minute for the last 5 minutes)
+      'There have been a higher than usual rate of internal server errors reported. (> 10 per minute for the last 5 minutes)'
