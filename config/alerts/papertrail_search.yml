@@ -1,0 +1,14 @@
+---
+ISE-high-rate:
+  type: 'papertrailSearch'
+  description: 'Alert when there is a high rate of ISEs being reported'
+  query: '("-> 500" OR "status=500") -treeherder'
+  # Arbitray amount of times that should happen per 60 seconds
+  threshold: 10
+  # Poll every 60 seconds
+  frequency: 60
+  # If we have more than 10 ISEs every 60 seconds for 3 minutes, something is probably wrong
+  duration: 300
+  notification:
+    message:
+      'There have been a higher than usual rate of internal server errors reported. (> 10 per minute for the last 5 minutes)

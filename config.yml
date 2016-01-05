@@ -6,6 +6,9 @@ defaults:
     host:     !env INFLUX_HOST
     username: !env INFLUX_USERNAME
     password: !env INFLUX_PASSWORD
+  papertrail:
+    baseUrl: 'https://papertrailapp.com/api/v1/'
+    apiToken: !env PAPERTRAIL_API_TOKEN
   aws:
     sns:
       topic:           !env AWS_SNS_TOPIC
