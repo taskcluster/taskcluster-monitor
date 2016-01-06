@@ -26,7 +26,7 @@ provisioner-checkin:
   description: 'Alert when the provisioner has not performed a provisioning iteration in more than 10 minutes'
   database: 'taskclusterdev'
   query: 'select count(distinct(workerType)) from AwsProvisioner.ProvisioningIteration where time > now() - 10m'
-  min_treshold: 1
+  min_threshold: 1
   frequency: 300
   notification:
     message:
