@@ -378,3 +378,23 @@ cache-hg.mozilla.org/releases/mozilla-b2g44_v2_5/:
   notification:
     message:
       "Cached repo 'https://hg.mozilla.org/releases/mozilla-b2g44_v2_5/' has not been cached in over 48 hours."
+
+cache-hg.mozilla.org/releases/b2g-ota:
+  type: 'indexedTask'
+  description: "Alert when 'hg.mozilla.org/releases/b2g-ota' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.8fd18af770fe4244f4f9473c7aed7351'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://hg.mozilla.org/releases/b2g-ota' has not been cached in over 48 hours."
+
+cache-hg.mozilla.org/releases/b2g-ota/:
+  type: 'indexedTask'
+  description: "Alert when 'hg.mozilla.org/releases/b2g-ota/' hasn't been cached in more than 48 hours"
+  namespace: 'tc-vcs.v1.clones.a5bad40e8a2959e93a25d2c4fd2d60e4'
+  frequency: 600
+  threshold: 48
+  notification:
+    message:
+      "Cached repo 'https://hg.mozilla.org/releases/b2g-ota/' has not been cached in over 48 hours."
