@@ -21,3 +21,12 @@ pending-count-gaia-decision:
   threshold: 5
   notification:
     message: 'Gaia decision task pending queue has an average above 5 for 10 minutes.'
+provisioner-checkin:
+  type: 'influx'
+  description: 'Alert when the provisioner has not performed a provisioning iteration in more than 10 minutes'
+  query: 'select count(distinct(workerType)) from AwsProvisioner.ProvisioningIteration where time > now() - 10m'
+  min_treshold: 1
+  frequency: 300
+  notification:
+    message:
+      'The aws-provisioner has not performed a provisioning iteration in longer than 10 minutes.  Double check papertrail for any relevant information.  Restarting the provisioner in heroku typically resolves the issue but before doing so, please capture the heroku logs for the provisioner and forward to jhford.'

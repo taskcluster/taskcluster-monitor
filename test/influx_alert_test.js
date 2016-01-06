@@ -278,4 +278,78 @@ suite('Influx DB Alert', () => {
       'Alert status should be inactive when threshold not reached'
     );
   });
+
+  test('status change from inactive to pending using min_threshold', async () => {
+    let config = {
+      influx: {
+        host: 'localhost',
+        username: 'username',
+        password: 'password'
+      }
+    };
+
+    let alertConfig = {
+      name: 'test-alert',
+      type: 'influx',
+      description: 'test alert',
+      query: 'select * from time_series',
+      frequency: 1,
+      duration: 5,
+      min_threshold: 1,
+      database: 'test'
+    }
+
+    let result = [
+      {
+        points: [ [0,0] ]
+      }
+    ];
+
+    let mock = nock('http://localhost:8086')
+                 .get('/db/test/series')
+                 .query(true)
+                 .reply(200, result);
+
+    let a = new InfluxAlert(config, alertConfig);
+
+    assert(a.status === 'inactive', 'Alert status should be inactive');
+    await a.run();
+    assert(a.status === 'pending', 'Alert status should be pending');
+  });
+
+  test('status inactive using min_threshold', async () => {
+    let config = {
+      influx: {
+        host: 'localhost',
+        username: 'username',
+        password: 'password'
+      }
+    };
+
+    let alertConfig = {
+      name: 'test-alert',
+      type: 'influx',
+      description: 'test alert',
+      query: 'select * from time_series',
+      frequency: 1,
+      duration: 5,
+      min_threshold: 1,
+      database: 'test'
+    }
+
+    let result = [
+      {
+        points: [ [0,3] ]
+      }
+    ];
+
+    let mock = nock('http://localhost:8086')
+                 .get('/db/test/series')
+                 .query(true)
+                 .reply(200, result);
+
+    let a = new InfluxAlert(config, alertConfig);
+
+    assert(a.status === 'inactive', 'Alert status should be inactive');
+  });
 });
