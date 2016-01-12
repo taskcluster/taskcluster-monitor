@@ -312,7 +312,6 @@ suite('Influx DB Alert', () => {
 
     let a = new InfluxAlert(config, alertConfig);
 
-    assert(a.status === 'inactive', 'Alert status should be inactive');
     await a.run();
     assert(a.status === 'pending', 'Alert status should be pending');
   });
@@ -349,6 +348,7 @@ suite('Influx DB Alert', () => {
                  .reply(200, result);
 
     let a = new InfluxAlert(config, alertConfig);
+    await a.run();
 
     assert(a.status === 'inactive', 'Alert status should be inactive');
   });
