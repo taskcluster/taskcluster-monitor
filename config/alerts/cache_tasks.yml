@@ -349,16 +349,6 @@ cache-hg.mozilla.org/releases/mozilla-b2g37_v2_2r/:
     message:
       "Cached repo 'https://hg.mozilla.org/releases/mozilla-b2g37_v2_2r/' has not been cached in over 48 hours."
 
-cache-hg.mozilla.org/releases/mozilla-b2g37_v2_2r/:
-  type: 'indexedTask'
-  description: "Alert when 'hg.mozilla.org/releases/mozilla-b2g37_v2_2r/' hasn't been cached in more than 48 hours"
-  namespace: 'tc-vcs.v1.clones.54bed4f0e4c6f0a75ba9d5958615c005'
-  frequency: 600
-  threshold: 48
-  notification:
-    message:
-      "Cached repo 'https://hg.mozilla.org/releases/mozilla-b2g37_v2_2r/' has not been cached in over 48 hours."
-
 cache-hg.mozilla.org/releases/mozilla-b2g44_v2_5:
   type: 'indexedTask'
   description: "Alert when 'hg.mozilla.org/releases/mozilla-b2g44_v2_5' hasn't been cached in more than 48 hours"
