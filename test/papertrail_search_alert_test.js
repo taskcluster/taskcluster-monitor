@@ -93,7 +93,71 @@ suite('Papertrail Search Alert', () => {
                  .reply(200, result);
     let a = new PapertrailSearchAlert(config, alertConfig);
     await a.run();
-    assert.equal(a.status, 'pending', "Alert status should be inactive");
+    assert.equal(a.status, 'pending', "Alert status should be pending");
+  });
+
+
+  test('status change from inactive to pending using minimum threshold', async () => {
+    let config = {
+      papertrail: {
+        baseUrl: 'http://localhost:8086/api/v1/',
+        apiToken: '1234'
+      }
+    };
+
+    let alertConfig = {
+      name: 'test-alert',
+      type: 'papertrailSearch',
+      description: 'test alert',
+      query: 'status=500',
+      frequency: 60,
+      duration: 300,
+      min_threshold: 3,
+    }
+
+    let result = {
+      events: [1,2]
+    };
+
+    let mock = nock('http://localhost:8086')
+                 .get('/api/v1/events/search')
+                 .query(true)
+                 .reply(200, result);
+    let a = new PapertrailSearchAlert(config, alertConfig);
+    await a.run();
+    assert.equal(a.status, 'pending', "Alert status should be pending");
+  });
+
+
+  test('status remained inactive when using minimum threshold', async () => {
+    let config = {
+      papertrail: {
+        baseUrl: 'http://localhost:8086/api/v1/',
+        apiToken: '1234'
+      }
+    };
+
+    let alertConfig = {
+      name: 'test-alert',
+      type: 'papertrailSearch',
+      description: 'test alert',
+      query: 'status=500',
+      frequency: 60,
+      duration: 300,
+      min_threshold: 1,
+    }
+
+    let result = {
+      events: [1,2]
+    };
+
+    let mock = nock('http://localhost:8086')
+                 .get('/api/v1/events/search')
+                 .query(true)
+                 .reply(200, result);
+    let a = new PapertrailSearchAlert(config, alertConfig);
+    await a.run();
+    assert.equal(a.status, 'inactive', "Alert status should be inactive");
   });
 
   test('status change from pending to active', async () => {

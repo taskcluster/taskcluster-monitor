@@ -12,3 +12,12 @@ ISE-high-rate:
   notification:
     message:
       'There have been a higher than usual rate of internal server errors reported. (> 10 per minute for the last 5 minutes)'
+no-decision-tasks-scheduled:
+  type: 'papertrailSearch'
+  description: 'Alert when there have not been any decision tasks scheduled in some period of time'
+  query: '"Posting job for project"'
+  min_threshold: 1
+  frequency: 3600
+  notification:
+    message:
+      'No decision tasks have been scheduled for 1 hour.  Review treeherder and mozilla-taskcluster to see if there are pushes that have not been scheduled'
