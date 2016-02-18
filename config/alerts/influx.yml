@@ -30,4 +30,4 @@ provisioner-checkin:
   frequency: 120
   notification:
     message:
-      'The aws-provisioner has not performed a provisioning iteration in longer than 10 minutes.  Double check papertrail for any relevant information.  Restarting the provisioner in heroku typically resolves the issue but before doing so, please capture the heroku logs for the provisioner and forward to jhford.'
+      'The aws-provisioner has not performed a provisioning iteration in longer than 10 minutes.'
