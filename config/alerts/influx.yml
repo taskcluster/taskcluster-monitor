@@ -25,9 +25,9 @@ provisioner-checkin:
   type: 'influx'
   description: 'Alert when the provisioner has not performed a provisioning iteration in more than 10 minutes'
   database: 'taskclusterdev'
-  query: 'select count(distinct(workerType)) from AwsProvisioner.ProvisioningIteration where time > now() - 10m'
+  query: 'select count(distinct(workerType)) from AwsProvisioner.ProvisioningIteration where time > now() - 15m'
   min_threshold: 1
   frequency: 120
   notification:
     message:
-      'The aws-provisioner has not performed a provisioning iteration in longer than 10 minutes.'
+      'The aws-provisioner has not performed a provisioning iteration in longer than 15 minutes.'
